@@ -6,6 +6,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'feedpage/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Hi+Melody&family=Poor+Story&family=Sunflower:wght@500&display=swap" rel="stylesheet">
+  </head>
   
   <header style="width: 100%; background-color: lightpink; color: black; text-align: center;">
     <div style="font-size: 30px; font-weight: bold;">
@@ -19,7 +20,7 @@
           <br>
           <div>
             내가 좋아한 글: {{user.like_feeds.count}}개
-          <div>
+          </div>
           <br>
             팔로잉: {{ user.profile.follow_to.all.count }} <br>
             팔로워: {{ user.profile.follow_from.all.count }} <br>
